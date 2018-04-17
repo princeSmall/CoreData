@@ -14,6 +14,8 @@
 		EEC8600A208587D6004A492D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEC86009208587D6004A492D /* Assets.xcassets */; };
 		EEC8600D208587D6004A492D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEC8600B208587D6004A492D /* LaunchScreen.storyboard */; };
 		EEC86010208587D6004A492D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC8600F208587D6004A492D /* main.m */; };
+		EEC8601D20858B67004A492D /* User+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC8601B20858B67004A492D /* User+CoreDataClass.m */; };
+		EEC8601E20858B67004A492D /* User+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC8601C20858B67004A492D /* User+CoreDataProperties.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,10 @@
 		EEC8600C208587D6004A492D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EEC8600E208587D6004A492D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEC8600F208587D6004A492D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EEC8601920858B67004A492D /* User+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "User+CoreDataProperties.h"; sourceTree = "<group>"; };
+		EEC8601A20858B67004A492D /* User+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "User+CoreDataClass.h"; sourceTree = "<group>"; };
+		EEC8601B20858B67004A492D /* User+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "User+CoreDataClass.m"; sourceTree = "<group>"; };
+		EEC8601C20858B67004A492D /* User+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "User+CoreDataProperties.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +50,10 @@
 		EEC85FF1208587D5004A492D = {
 			isa = PBXGroup;
 			children = (
+				EEC8601920858B67004A492D /* User+CoreDataProperties.h */,
+				EEC8601C20858B67004A492D /* User+CoreDataProperties.m */,
+				EEC8601A20858B67004A492D /* User+CoreDataClass.h */,
+				EEC8601B20858B67004A492D /* User+CoreDataClass.m */,
 				EEC85FFC208587D5004A492D /* CoreData */,
 				EEC85FFB208587D5004A492D /* Products */,
 			);
@@ -144,10 +154,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEC8601E20858B67004A492D /* User+CoreDataProperties.m in Sources */,
 				EEC86002208587D5004A492D /* ViewController.m in Sources */,
 				EEC85FFF208587D5004A492D /* AppDelegate.m in Sources */,
 				EEC86010208587D6004A492D /* main.m in Sources */,
 				EEC86008208587D6004A492D /* CoreData.xcdatamodeld in Sources */,
+				EEC8601D20858B67004A492D /* User+CoreDataClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +300,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3F7H4D8NK3;
 				INFOPLIST_FILE = CoreData/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -304,6 +317,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3F7H4D8NK3;
 				INFOPLIST_FILE = CoreData/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
