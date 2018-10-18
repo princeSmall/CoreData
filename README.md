@@ -5,7 +5,7 @@
 
 2、CoreData 框架中包含了FetchRequest数据查询请求、ManagedObjectContent托管对象上下文、PersistentStoreCoordinate持久化存储协调器和PersistentStore持久化存储等概念。
 
-#### 基本概念
+####  基本概念
 
 1. FetchRequest：数据查询请求
 2. ManagedObjectContent：托管对象上下文
