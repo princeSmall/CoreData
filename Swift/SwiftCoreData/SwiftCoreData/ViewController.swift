@@ -3,7 +3,7 @@
 //  SwiftCoreData
 //
 //  Created by 李敏 on 2018/4/17.
-//  Copyright © 2018年 Tongle. All rights reserved.
+//  Copyright © 2018年 iOS. All rights reserved.
 //
 
 import UIKit
@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         let appDelegate:AppDelegate = UIApplication.shared.delegate as!AppDelegate
         let managed = appDelegate.persistentContainer.viewContext
         let newUser = NSEntityDescription.insertNewObject(forEntityName: "Entity", into: managed)as!Entity
-        newUser.userName = "tongle"
+        newUser.userName = "iOS"
         newUser.password = "123456"
         
         do {
@@ -46,7 +46,7 @@ class ViewController: UIViewController {
         request.fetchLimit = 10
         request.entity = entity;
         
-        let predicate = NSPredicate(format: "userName = 'tongle'")
+        let predicate = NSPredicate(format: "userName = 'iOS'")
         request.predicate = predicate
         do {
             print("删除成功")
@@ -67,7 +67,7 @@ class ViewController: UIViewController {
         request.fetchLimit = 10
         request.entity = entity;
         
-        let predicate = NSPredicate(format: "userName = 'tongle'")
+        let predicate = NSPredicate(format: "userName = 'iOS'")
         request.predicate = predicate
         do {
             print("更新成功")
@@ -89,7 +89,7 @@ class ViewController: UIViewController {
         request.fetchLimit = 10
         request.entity = entity;
         
-        let predicate = NSPredicate(format: "userName = 'tongle'")
+        let predicate = NSPredicate(format: "userName = 'iOS'")
         request.predicate = predicate
         do {
             print("查询成功")

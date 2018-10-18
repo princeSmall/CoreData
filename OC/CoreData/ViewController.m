@@ -3,7 +3,7 @@
 //  CoreData
 //
 //  Created by 李敏 on 2018/4/17.
-//  Copyright © 2018年 Tongle. All rights reserved.
+//  Copyright © 2018年 iOS. All rights reserved.
 //
 
 #import "ViewController.h"
@@ -84,7 +84,7 @@
 }
 - (void)updateCurrentObject{
     //    设置查询条件;
-    NSPredicate * predicate = [NSPredicate predicateWithFormat:@"userName = 'tongle'"];
+    NSPredicate * predicate = [NSPredicate predicateWithFormat:@"userName = 'iOS'"];
     self.fetchRequest.predicate = predicate;
     NSError *error = nil;
     //    发起查询请求并返回查询结果;
@@ -104,7 +104,7 @@
 - (void)inquireCurrentObject{
 
     //    设置查询条件;
-    NSPredicate * predicate = [NSPredicate predicateWithFormat:@"userName = 'tongle'"];
+    NSPredicate * predicate = [NSPredicate predicateWithFormat:@"userName = 'iOS'"];
     self.fetchRequest.predicate = predicate;
     NSError *error = nil;
     //    发起查询请求并返回查询结果;
@@ -123,7 +123,7 @@
    
     //    获取Entity对象;
     User * user = [NSEntityDescription insertNewObjectForEntityForName:@"User" inManagedObjectContext:self.managedObjectcontext];
-    user.userName = @"tongle";
+    user.userName = @"iOS";
     user.password = @"123456";
     NSError *error = nil;
     //    保存;
